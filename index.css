@@ -1,0 +1,70 @@
+/* Set the default font and padding/margin for the page */
+font-face {
+    font-family: "Avenir-Medium";
+    src: url("fonts/Avenir-Medium-09.ttf") format('woff2');
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Avenir-Medium";
+    border: 1px dotted red;
+}
+
+/* Modal desktop wrapper */
+.modal-desktop-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+ 
+/* Promotional text wrapper */
+.promo-wrapper{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button/logo wrapper */
+.modal-btn-wrapper, 
+.logo-wrapper {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0%;
+}
+
+/* logo wrapper image */
+.logo-wrapper{
+    background-image: url("images/quietcool-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Promotional text */
+.promo-wrapper>p{
+    color: white;
+    font-size: 2rem;
+}
+
+/* Modal button - brings up modal on-click */
+.modal-btn{
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+}
